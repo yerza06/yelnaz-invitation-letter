@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -30,8 +30,8 @@
 <!-- Nav dots -->
 <nav id="nav-dots">
     <div class="nd active" data-s="hero"       title="Басты"></div>
-    <div class="nd"        data-s="countdown"   title="Мерекеге дейін"></div>
     <div class="nd"        data-s="invitation"  title="Шақыру"></div>
+    <div class="nd"        data-s="countdown"   title="Мерекеге дейін"></div>
     <div class="nd"        data-s="details"     title="Мәліметтер"></div>
     <div class="nd"        data-s="location"    title="Мекенжай"></div>
     <div class="nd"        data-s="rsvp"        title="RSVP"></div>
@@ -180,10 +180,107 @@
 
 
 <!-- ══════════════════════════════════════
+     INVITATION
+══════════════════════════════════════ -->
+<section id="invitation">
+    <div class="invitation-inner">
+
+        <span class="section-eyebrow reveal">Шақыру хат</span>
+        <h2 class="section-title reveal" style="text-align:center; font-size:clamp(22px,4.5vw,40px); line-height:1.45;">Құрметті ағайын-туыс, бауырлар,<br><em>құда-жекжат, нағашы-жиен, бөлелер,</em><br>әріптестер және дос-жарандар!</h2>
+
+        <p class="inv-text reveal">
+            Жүрегімізге толы қуаныш бен шаттықпен<br>
+            Сізді <strong>Елназдың</strong> қыз ұзату тойына<br>
+            шақырамыз.
+        </p>
+
+        <p class="inv-note reveal">
+            Бұл ерекше кеш — біздің сүйікті қызымыздың<br>
+            жас отау иесі болар алдындағы ең жарқын<br>
+            және ең маңызды кештердің бірі.
+        </p>
+
+        <p class="inv-note reveal">
+            Сіздің болуыңыз бізге зор қуаныш<br>
+            және бата-береке әкеледі.
+        </p>
+
+        <div class="ornament-line reveal" style="margin-top:44px;">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+                <path d="M11 1 L21 11 L11 21 L1 11 Z" fill="#C9A84C" opacity=".3"/>
+                <path d="M11 5 L17 11 L11 17 L5 11 Z" fill="#C9A84C" opacity=".55"/>
+                <circle cx="11" cy="11" r="2.5" fill="#8B1A2E" opacity=".45"/>
+            </svg>
+        </div>
+
+        <p class="inv-signature reveal">— Абылай және Айнұр —</p>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
      COUNTDOWN / CALENDAR
 ══════════════════════════════════════ -->
 <section id="countdown">
     <div class="countdown-inner">
+
+        <!-- Kazakh ornament divider (қошқар мүйіз + тұмар) -->
+        <svg class="kz-ornament reveal" viewBox="0 0 240 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Base horizontal guideline -->
+            <line x1="10" y1="55" x2="90"  y2="55" stroke="#C9A84C" stroke-width=".6" opacity=".35"/>
+            <line x1="150" y1="55" x2="230" y2="55" stroke="#C9A84C" stroke-width=".6" opacity=".35"/>
+
+            <!-- LEFT: ram horns (қошқар мүйіз) -->
+            <path d="M50 55 C 50 38, 38 28, 28 38 C 22 44, 24 54, 32 54 C 36 54, 38 51, 36 48"
+                  stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M50 55 C 50 72, 38 82, 28 72 C 22 66, 24 56, 32 56 C 36 56, 38 59, 36 62"
+                  stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M50 55 C 62 50, 72 40, 68 28 C 64 20, 55 22, 56 30"
+                  stroke="#C9A84C" stroke-width="1.3" fill="none" stroke-linecap="round" opacity=".75"/>
+            <path d="M50 55 C 62 60, 72 70, 68 82 C 64 90, 55 88, 56 80"
+                  stroke="#C9A84C" stroke-width="1.3" fill="none" stroke-linecap="round" opacity=".75"/>
+            <circle cx="28" cy="55" r="2" fill="#8B1A2E" opacity=".55"/>
+
+            <!-- CENTER: tumar (amulet) medallion -->
+            <path d="M120 15 L160 55 L120 95 L80 55 Z"
+                  stroke="#C9A84C" stroke-width="1" opacity=".5" fill="none"/>
+            <path d="M120 26 L149 55 L120 84 L91 55 Z"
+                  stroke="#C9A84C" stroke-width=".8" opacity=".4" fill="none"/>
+            <path d="M120 38 L137 55 L120 72 L103 55 Z"
+                  fill="#C9A84C" opacity=".15"/>
+
+            <!-- Inner sun motif -->
+            <circle cx="120" cy="55" r="9" stroke="#C9A84C" stroke-width=".8" opacity=".7" fill="none"/>
+            <circle cx="120" cy="55" r="5" fill="#C9A84C" opacity=".45"/>
+            <circle cx="120" cy="55" r="2" fill="#8B1A2E"/>
+            <!-- Rays -->
+            <line x1="120" y1="44" x2="120" y2="40" stroke="#C9A84C" stroke-width="1" opacity=".55"/>
+            <line x1="120" y1="66" x2="120" y2="70" stroke="#C9A84C" stroke-width="1" opacity=".55"/>
+            <line x1="109" y1="55" x2="105" y2="55" stroke="#C9A84C" stroke-width="1" opacity=".55"/>
+            <line x1="131" y1="55" x2="135" y2="55" stroke="#C9A84C" stroke-width="1" opacity=".55"/>
+            <line x1="112" y1="47" x2="114" y2="49" stroke="#C9A84C" stroke-width=".8" opacity=".45"/>
+            <line x1="126" y1="61" x2="128" y2="63" stroke="#C9A84C" stroke-width=".8" opacity=".45"/>
+            <line x1="112" y1="63" x2="114" y2="61" stroke="#C9A84C" stroke-width=".8" opacity=".45"/>
+            <line x1="126" y1="49" x2="128" y2="47" stroke="#C9A84C" stroke-width=".8" opacity=".45"/>
+
+            <!-- Diamond corner markers on tumar -->
+            <path d="M120 12 L123 15 L120 18 L117 15 Z" fill="#C9A84C" opacity=".55"/>
+            <path d="M120 92 L123 95 L120 98 L117 95 Z" fill="#C9A84C" opacity=".55"/>
+            <path d="M77 55 L80 52 L83 55 L80 58 Z" fill="#C9A84C" opacity=".55"/>
+            <path d="M157 55 L160 52 L163 55 L160 58 Z" fill="#C9A84C" opacity=".55"/>
+
+            <!-- RIGHT: ram horns (mirror) -->
+            <path d="M190 55 C 190 38, 202 28, 212 38 C 218 44, 216 54, 208 54 C 204 54, 202 51, 204 48"
+                  stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M190 55 C 190 72, 202 82, 212 72 C 218 66, 216 56, 208 56 C 204 56, 202 59, 204 62"
+                  stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M190 55 C 178 50, 168 40, 172 28 C 176 20, 185 22, 184 30"
+                  stroke="#C9A84C" stroke-width="1.3" fill="none" stroke-linecap="round" opacity=".75"/>
+            <path d="M190 55 C 178 60, 168 70, 172 82 C 176 90, 185 88, 184 80"
+                  stroke="#C9A84C" stroke-width="1.3" fill="none" stroke-linecap="round" opacity=".75"/>
+            <circle cx="212" cy="55" r="2" fill="#8B1A2E" opacity=".55"/>
+        </svg>
+
         <span class="section-eyebrow reveal">Мерекеге дейін</span>
         <h2 class="section-title reveal">Шілде<br><em>2026</em></h2>
 
@@ -257,61 +354,6 @@
                 <span class="cd-label">Секунд</span>
             </div>
         </div>
-    </div>
-</section>
-
-
-<!-- ══════════════════════════════════════
-     INVITATION
-══════════════════════════════════════ -->
-<section id="invitation">
-    <div class="invitation-inner">
-
-        <svg class="inv-ornament reveal" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M55 5 L105 55 L55 105 L5 55 Z" stroke="#C9A84C" stroke-width="1" opacity=".35"/>
-            <path d="M55 18 L92 55 L55 92 L18 55 Z" stroke="#C9A84C" stroke-width="1" opacity=".28"/>
-            <path d="M55 31 L79 55 L55 79 L31 55 Z" stroke="#C9A84C" stroke-width="1" opacity=".45"/>
-            <path d="M55 42 L68 55 L55 68 L42 55 Z" fill="#C9A84C" opacity=".18"/>
-            <circle cx="55" cy="55" r="5" fill="#C9A84C" opacity=".55"/>
-            <path d="M55 2  L58 5  L55 8  L52 5  Z" fill="#C9A84C" opacity=".5"/>
-            <path d="M55 102 L58 105 L55 108 L52 105 Z" fill="#C9A84C" opacity=".5"/>
-            <path d="M2  55 L5  52 L8  55 L5  58 Z" fill="#C9A84C" opacity=".5"/>
-            <path d="M102 55 L105 52 L108 55 L105 58 Z" fill="#C9A84C" opacity=".5"/>
-            <circle cx="55" cy="5"   r="2" fill="#8B1A2E" opacity=".35"/>
-            <circle cx="105" cy="55" r="2" fill="#8B1A2E" opacity=".35"/>
-            <circle cx="55" cy="105" r="2" fill="#8B1A2E" opacity=".35"/>
-            <circle cx="5"  cy="55"  r="2" fill="#8B1A2E" opacity=".35"/>
-        </svg>
-
-        <span class="section-eyebrow reveal">Шақыру хат</span>
-        <h2 class="section-title reveal" style="text-align:center; font-size:clamp(22px,4.5vw,40px); line-height:1.45;">Құрметті ағайын-туыс, бауырлар,<br><em>құда-жекжат, нағашы-жиен, бөлелер,</em><br>әріптестер және дос-жарандар!</h2>
-
-        <p class="inv-text reveal">
-            Жүрегімізге толы қуаныш бен шаттықпен<br>
-            Сізді <strong>Елназдың</strong> қыз ұзату тойына<br>
-            шақырамыз.
-        </p>
-
-        <p class="inv-note reveal">
-            Бұл ерекше кеш — біздің сүйікті қызымыздың<br>
-            жас отау иесі болар алдындағы ең жарқын<br>
-            және ең маңызды кештердің бірі.
-        </p>
-
-        <p class="inv-note reveal">
-            Сіздің болуыңыз бізге зор қуаныш<br>
-            және бата-береке әкеледі.
-        </p>
-
-        <div class="ornament-line reveal" style="margin-top:44px;">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-                <path d="M11 1 L21 11 L11 21 L1 11 Z" fill="#C9A84C" opacity=".3"/>
-                <path d="M11 5 L17 11 L11 17 L5 11 Z" fill="#C9A84C" opacity=".55"/>
-                <circle cx="11" cy="11" r="2.5" fill="#8B1A2E" opacity=".45"/>
-            </svg>
-        </div>
-
-        <p class="inv-signature reveal">— Абылай және Айнұр —</p>
     </div>
 </section>
 

@@ -43,7 +43,7 @@ tick();
 setInterval(tick, 1000);
 
 /* ── Nav dots ── */
-const SECTIONS = ['hero','countdown','invitation','details','location','rsvp'];
+const SECTIONS = ['hero','invitation','countdown','details','location','rsvp'];
 const dots = document.querySelectorAll('.nd');
 
 dots.forEach((d, i) => {
