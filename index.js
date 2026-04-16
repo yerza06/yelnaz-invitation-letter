@@ -164,12 +164,12 @@ SECTIONS.forEach(id => {
         let msg = '';
         if (attending.value === 'yes') {
             const withSpouse = spouse.value === 'with';
-            msg = `Сәлем! Мен ${name}.\n\nЕлназдың Қыз ұзату тойына (1 шілде 2026) қатысамын.`;
+            msg = `Сәлем! Мен ${name}.\n\nYelnaz'дың Қыз ұзату тойына (1 шілде 2026) қатысамын.`;
             msg += withSpouse
                 ? '\nЖұбайыммен бірге келемін. (2 адам)'
                 : '\nЖалғыз келемін. (1 адам)';
         } else {
-            msg = `Сәлем! Мен ${name}.\n\nӨкінішке орай, Елназдың Қыз ұзату тойына (1 шілде 2026) келе алмаймын.`;
+            msg = `Сәлем! Мен ${name}.\n\nӨкінішке орай, Yelnaz'дың Қыз ұзату тойына (1 шілде 2026) келе алмаймын.`;
         }
 
         const url = `https://wa.me/77071900557?text=${encodeURIComponent(msg)}`;
