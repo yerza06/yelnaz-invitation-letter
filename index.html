@@ -6,8 +6,8 @@
     <title>Yelnaz — Қыз ұзату</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -30,9 +30,9 @@
 <!-- Nav dots -->
 <nav id="nav-dots">
     <div class="nd active" data-s="hero"       title="Басты"></div>
+    <div class="nd"        data-s="countdown"   title="Мерекеге дейін"></div>
     <div class="nd"        data-s="invitation"  title="Шақыру"></div>
     <div class="nd"        data-s="details"     title="Мәліметтер"></div>
-    <div class="nd"        data-s="countdown"   title="Таймер"></div>
     <div class="nd"        data-s="location"    title="Мекенжай"></div>
     <div class="nd"        data-s="rsvp"        title="RSVP"></div>
 </nav>
@@ -157,9 +157,9 @@
     </svg>
 
     <div class="hero-content">
-        <p class="hero-eyebrow">Сізді шақырамыз</p>
+        <!-- <p class="hero-eyebrow">Сізді шақырамыз</p> -->
         <h1 class="hero-name">Yelnaz</h1>
-        <p class="hero-ceremony">Қыз ұзату</p>
+        <h2 class="hero-ceremony">Қыз ұзату</h2>
         <div class="hero-divider">
             <div class="ornament-line">
                 <svg width="36" height="18" viewBox="0 0 36 18" fill="none">
@@ -175,6 +175,88 @@
     <div class="hero-scroll">
         <span>Төмен қарай</span>
         <div class="scroll-bar"></div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     COUNTDOWN / CALENDAR
+══════════════════════════════════════ -->
+<section id="countdown">
+    <div class="countdown-inner">
+        <span class="section-eyebrow reveal">Мерекеге дейін</span>
+        <h2 class="section-title reveal">Шілде<br><em>2026</em></h2>
+
+        <div class="cal reveal">
+            <div class="cal-head">
+                <div class="cal-dow">Дс</div>
+                <div class="cal-dow">Сс</div>
+                <div class="cal-dow">Ср</div>
+                <div class="cal-dow">Бс</div>
+                <div class="cal-dow">Жм</div>
+                <div class="cal-dow cal-dow-we">Сб</div>
+                <div class="cal-dow cal-dow-we">Жс</div>
+            </div>
+            <div class="cal-grid">
+                <div class="cal-day empty"></div>
+                <div class="cal-day empty"></div>
+                <div class="cal-day active">
+                    <span class="cal-day-num">1</span>
+                    <span class="cal-day-mark">Той</span>
+                </div>
+                <div class="cal-day">2</div>
+                <div class="cal-day">3</div>
+                <div class="cal-day cal-day-we">4</div>
+                <div class="cal-day cal-day-we">5</div>
+                <div class="cal-day">6</div>
+                <div class="cal-day">7</div>
+                <div class="cal-day">8</div>
+                <div class="cal-day">9</div>
+                <div class="cal-day">10</div>
+                <div class="cal-day cal-day-we">11</div>
+                <div class="cal-day cal-day-we">12</div>
+                <div class="cal-day">13</div>
+                <div class="cal-day">14</div>
+                <div class="cal-day">15</div>
+                <div class="cal-day">16</div>
+                <div class="cal-day">17</div>
+                <div class="cal-day cal-day-we">18</div>
+                <div class="cal-day cal-day-we">19</div>
+                <div class="cal-day">20</div>
+                <div class="cal-day">21</div>
+                <div class="cal-day">22</div>
+                <div class="cal-day">23</div>
+                <div class="cal-day">24</div>
+                <div class="cal-day cal-day-we">25</div>
+                <div class="cal-day cal-day-we">26</div>
+                <div class="cal-day">27</div>
+                <div class="cal-day">28</div>
+                <div class="cal-day">29</div>
+                <div class="cal-day">30</div>
+                <div class="cal-day">31</div>
+            </div>
+        </div>
+
+        <p class="cal-caption reveal">2026 жылдың 1 шілдесі · Сәрсенбі</p>
+
+        <div class="cd-grid reveal">
+            <div class="cd-item">
+                <div class="cd-num" id="cd-days">00</div>
+                <span class="cd-label">Күн</span>
+            </div>
+            <div class="cd-item">
+                <div class="cd-num" id="cd-hours">00</div>
+                <span class="cd-label">Сағат</span>
+            </div>
+            <div class="cd-item">
+                <div class="cd-num" id="cd-min">00</div>
+                <span class="cd-label">Минут</span>
+            </div>
+            <div class="cd-item">
+                <div class="cd-num" id="cd-sec">00</div>
+                <span class="cd-label">Секунд</span>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -202,11 +284,11 @@
         </svg>
 
         <span class="section-eyebrow reveal">Шақыру хат</span>
-        <h2 class="section-title reveal" style="text-align:center; font-size:clamp(22px,4.5vw,40px); line-height:1.45;">Құрметті ағайын-туыс, бауырлар,<br><em>құда-жекжат, нағашы-жиен, бөлелер,</em><br>әріптестер, дос-жарандар және оқушылары!</h2>
+        <h2 class="section-title reveal" style="text-align:center; font-size:clamp(22px,4.5vw,40px); line-height:1.45;">Құрметті ағайын-туыс, бауырлар,<br><em>құда-жекжат, нағашы-жиен, бөлелер,</em><br>әріптестер және дос-жарандар!</h2>
 
         <p class="inv-text reveal">
             Жүрегімізге толы қуаныш бен шаттықпен<br>
-            Сізді <strong>Yelnaz'дың</strong> қыз ұзату тойына<br>
+            Сізді <strong>Елназдың</strong> қыз ұзату тойына<br>
             шақырамыз.
         </p>
 
@@ -283,36 +365,6 @@
                 <p class="detail-sub">Банкет залы</p>
             </div>
 
-        </div>
-    </div>
-</section>
-
-
-<!-- ══════════════════════════════════════
-     COUNTDOWN
-══════════════════════════════════════ -->
-<section id="countdown">
-    <div class="countdown-inner">
-        <span class="section-eyebrow reveal">Мерекеге дейін</span>
-        <h2 class="section-title reveal">Қалған<br><em>уақыт</em></h2>
-
-        <div class="cd-grid reveal">
-            <div class="cd-item">
-                <div class="cd-num" id="cd-days">00</div>
-                <span class="cd-label">Күн</span>
-            </div>
-            <div class="cd-item">
-                <div class="cd-num" id="cd-hours">00</div>
-                <span class="cd-label">Сағат</span>
-            </div>
-            <div class="cd-item">
-                <div class="cd-num" id="cd-min">00</div>
-                <span class="cd-label">Минут</span>
-            </div>
-            <div class="cd-item">
-                <div class="cd-num" id="cd-sec">00</div>
-                <span class="cd-label">Секунд</span>
-            </div>
         </div>
     </div>
 </section>
