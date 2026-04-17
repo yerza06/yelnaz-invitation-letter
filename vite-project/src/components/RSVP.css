@@ -1,0 +1,317 @@
+#rsvp {
+  background: var(--dark);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#rsvp::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 50%,
+    rgba(201, 168, 76, 0.07) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+#rsvp .section-eyebrow {
+  color: var(--gold-pale);
+  opacity: 0.55;
+  text-align: center;
+}
+
+#rsvp .section-title {
+  color: var(--cream);
+  text-align: center;
+}
+
+.rsvp-inner {
+  max-width: 560px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.rsvp-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(16px, 3.5vw, 21px);
+  font-style: italic;
+  color: rgba(255, 248, 240, 0.6);
+  line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+.rsvp-text strong {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.rsvp-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 15px 36px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--dark);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.btn-wa:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(201, 168, 76, 0.3);
+}
+
+.btn-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 15px 36px;
+  background: transparent;
+  color: var(--cream);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.btn-call:hover {
+  border-color: var(--gold);
+  background: rgba(201, 168, 76, 0.06);
+}
+.rsvp-form {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.rf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.rf-label {
+  font-size: 9px;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: var(--gold-pale);
+  opacity: 0.7;
+}
+
+.rf-input {
+  background: rgba(255, 248, 240, 0.04);
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  color: var(--cream);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(17px, 3.5vw, 22px);
+  font-style: italic;
+  padding: 14px 18px;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+  width: 100%;
+}
+
+.rf-input::placeholder {
+  color: rgba(255, 248, 240, 0.2);
+}
+
+.rf-input:focus {
+  border-color: rgba(201, 168, 76, 0.7);
+  background: rgba(255, 248, 240, 0.07);
+}
+
+.rf-input.error {
+  border-color: rgba(212, 100, 80, 0.6);
+}
+
+.rf-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rf-radio {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  padding: 14px 18px;
+  border: 1px solid rgba(201, 168, 76, 0.18);
+  background: rgba(255, 248, 240, 0.03);
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+  position: relative;
+}
+
+.rf-radio:hover {
+  border-color: rgba(201, 168, 76, 0.45);
+  background: rgba(255, 248, 240, 0.06);
+}
+
+.rf-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.rf-radio-box {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: transparent;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.rf-radio input[type="radio"]:checked ~ .rf-radio-box {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  border-color: var(--gold);
+  color: var(--dark);
+}
+
+.rf-radio input[type="radio"]:checked ~ .rf-radio-text {
+  color: var(--cream);
+  opacity: 1;
+}
+
+.rf-radio-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(17px, 3.5vw, 21px);
+  font-style: italic;
+  color: rgba(255, 248, 240, 0.55);
+  transition:
+    color 0.2s,
+    opacity 0.2s;
+  line-height: 1.3;
+}
+
+/* Selected card highlight */
+.rf-radio:has(input:checked) {
+  border-color: rgba(201, 168, 76, 0.5);
+  background: rgba(201, 168, 76, 0.06);
+}
+
+.rf-error {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: rgba(212, 100, 80, 0.8);
+  display: none;
+}
+
+.rf-error.show {
+  display: block;
+}
+
+/* Spouse wrap animation */
+.rf-spouse-wrap {
+  overflow: hidden;
+  animation: rf-slide-down 0.35s ease;
+}
+
+@keyframes rf-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rf-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 17px 40px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--dark);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    opacity 0.2s;
+  margin-top: 8px;
+  align-self: stretch;
+}
+
+.rf-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(201, 168, 76, 0.35);
+}
+
+.rf-submit:active {
+  transform: translateY(0);
+}
+
+/* Success state */
+.rsvp-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 0;
+  animation: rf-slide-down 0.5s ease;
+}
+
+.rsvp-success-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(36px, 8vw, 56px);
+  font-weight: 300;
+  color: var(--gold);
+}
+
+.rsvp-success-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(16px, 3.5vw, 21px);
+  font-style: italic;
+  color: rgba(255, 248, 240, 0.55);
+  line-height: 1.8;
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+#invitation {
+  background: var(--cream);
+  text-align: center;
+}
+
+.invitation-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.inv-ornament {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 36px;
+}
+
+.inv-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(19px, 4vw, 27px);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.9;
+  color: var(--text);
+}
+
+.inv-text strong {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--burgundy);
+}
+
+.inv-note {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(15px, 3vw, 20px);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--text);
+  opacity: 0.75;
+  margin-top: 28px;
+}
+
+.inv-signature {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(15px, 3vw, 19px);
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  margin-top: 44px;
+}

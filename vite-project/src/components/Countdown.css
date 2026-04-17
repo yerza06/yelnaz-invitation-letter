@@ -1,0 +1,231 @@
+#countdown {
+  background: var(--cream-dark);
+  text-align: center;
+}
+
+.countdown-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Kazakh ornament (қошқар мүйіз + тұмар) */
+.kz-ornament {
+  display: block;
+  width: min(320px, 78%);
+  height: auto;
+  margin: 0 auto 32px;
+  filter: drop-shadow(0 2px 8px rgba(201, 168, 76, 0.15));
+}
+
+/* Calendar */
+.cal {
+  max-width: 520px;
+  margin: 44px auto 0;
+  padding: 28px clamp(18px, 4vw, 36px);
+  background: var(--cream);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  box-shadow: 0 14px 40px rgba(139, 26, 46, 0.06);
+  position: relative;
+}
+
+.cal::before,
+.cal::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--gold);
+  opacity: 0.5;
+}
+
+.cal::before {
+  top: -1px;
+  left: -1px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.cal::after {
+  bottom: -1px;
+  right: -1px;
+  border-left: none;
+  border-top: none;
+}
+
+.cal-head {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: clamp(2px, 0.8vw, 6px);
+  padding-bottom: 14px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.22);
+}
+
+.cal-dow {
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(9px, 1.8vw, 11px);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  opacity: 0.55;
+}
+
+.cal-dow-we {
+  color: var(--gold);
+  opacity: 0.75;
+}
+
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: clamp(2px, 0.8vw, 6px);
+}
+
+.cal-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(15px, 3vw, 20px);
+  font-weight: 400;
+  color: var(--text);
+  border: 1px solid transparent;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.cal-day:not(.empty):not(.active):hover {
+  background: rgba(201, 168, 76, 0.08);
+  border-color: rgba(201, 168, 76, 0.2);
+}
+
+.cal-day.empty {
+  visibility: hidden;
+}
+
+.cal-day-we {
+  color: var(--gold);
+  opacity: 0.7;
+}
+
+.cal-day.active {
+  flex-direction: column;
+  gap: 2px;
+  background: linear-gradient(
+    135deg,
+    var(--burgundy) 0%,
+    var(--burgundy-dark) 100%
+  );
+  color: var(--cream);
+  border-color: var(--gold);
+  box-shadow:
+    0 0 0 3px rgba(201, 168, 76, 0.2),
+    0 10px 26px rgba(139, 26, 46, 0.35);
+  transform: scale(1.08);
+  z-index: 1;
+  position: relative;
+  animation: cal-pulse 3s ease-in-out infinite;
+}
+
+.cal-day.active::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border: 1px dashed rgba(201, 168, 76, 0.35);
+  pointer-events: none;
+}
+
+.cal-day-num {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(20px, 5vw, 28px);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--gold-pale);
+}
+
+.cal-day-mark {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(7px, 1.4vw, 8px);
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@keyframes cal-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 3px rgba(201, 168, 76, 0.2),
+      0 10px 26px rgba(139, 26, 46, 0.35);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 6px rgba(201, 168, 76, 0.15),
+      0 14px 32px rgba(139, 26, 46, 0.4);
+  }
+}
+
+.cal-caption {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(14px, 3vw, 17px);
+  font-style: italic;
+  color: var(--burgundy);
+  opacity: 0.75;
+  letter-spacing: 0.04em;
+  margin-top: 24px;
+}
+
+.cd-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(12px, 4vw, 28px);
+  margin-top: 44px;
+}
+
+@media (max-width: 520px) {
+  .cd-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 24px;
+  }
+}
+
+.cd-item {
+  text-align: center;
+}
+
+.cd-num {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(60px, 14vw, 104px);
+  font-weight: 300;
+  color: var(--dark);
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+}
+
+.cd-num::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.cd-label {
+  font-size: clamp(9px, 1.8vw, 11px);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  opacity: 0.65;
+  margin-top: 22px;
+  display: block;
+}

@@ -1,0 +1,97 @@
+#details {
+  background: linear-gradient(150deg, var(--burgundy) 0%, #6b1020 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#details::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cpath d='M40 4 L76 40 L40 76 L4 40 Z' stroke='%23C9A84C' stroke-width='0.45' opacity='0.13'/%3E%3Cpath d='M40 16 L64 40 L40 64 L16 40 Z' stroke='%23C9A84C' stroke-width='0.45' opacity='0.08'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+#details .section-eyebrow {
+  color: var(--gold-pale);
+  opacity: 0.7;
+  text-align: center;
+}
+
+#details .section-title {
+  color: var(--cream);
+  text-align: center;
+}
+
+.details-inner {
+  width: 100%;
+  max-width: 440px;
+  padding: 60px 32px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.program-title {
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(34px, 9vw, 54px);
+  font-weight: 400;
+  color: var(--gold);
+  margin-bottom: 48px;
+  line-height: 1.2;
+}
+
+.program-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.program-time {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(44px, 12vw, 72px);
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+.program-desc {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(13px, 3.5vw, 16px);
+  font-weight: 400;
+  color: var(--gold);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.program-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(201, 168, 76, 0.3);
+  margin: 20px 0;
+  position: relative;
+}
+
+.program-divider::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  background: var(--gold);
+  opacity: 0.55;
+}

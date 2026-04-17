@@ -1,0 +1,35 @@
+#nav-dots {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  z-index: 500;
+}
+
+.nd {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.25;
+  cursor: pointer;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+}
+
+.nd.active {
+  opacity: 1;
+  transform: scale(1.6);
+}
+
+@media (max-width: 600px) {
+  #nav-dots {
+    display: none;
+  }
+}
+
+
