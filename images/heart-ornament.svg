@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <g fill="#8b1a2e" transform="translate(200, 100)">
+    <!-- Left side of the ornament -->
+    <path id="ornament-half" d="
+      /* Heart part - elegant thin lines with hollow center */
+      M -2,82
+      C -15,82 -68,65 -68,35
+      C -68,10 -45,0 -30,15
+      C -22,23 -25,42 -40,42
+      C -50,42 -52,32 -45,25
+      C -42,22 -38,25 -38,28
+      C -38,32 -42,34 -45,32
+      C -48,30 -45,20 -35,20
+      C -22,20 -18,35 -35,50
+      C -55,68 -5,75 0,35
+
+      /* Transition to Wing */
+      C -5,25 -15,15 -35,12
+      C -75,5 -125,10 -155,30
+      C -165,38 -175,25 -168,12
+      C -165,5 -158,8 -160,12
+      C -162,15 -165,15 -165,12
+      C -165,5 -155,0 -145,5
+      C -110,20 -60,18 -10,35
+
+      /* Feathers */
+      M -45,15
+      C -55,5 -75,-5 -95,5
+      C -100,8 -95,12 -92,10
+      C -85,5 -65,5 -55,18 Z
+
+      M -75,10
+      C -85,0 -115,-8 -135,5
+      C -140,8 -135,12 -132,10
+      C -120,5 -95,8 -85,20 Z
+    "/>
+
+    <!-- Mirrored Right side -->
+    <use href="#ornament-half" transform="scale(-1, 1)"/>
+
+    <!-- Bottom connection point -->
+    <path d="M -2,82 L 0,85 L 2,82 Z" />
+  </g>
+</svg>

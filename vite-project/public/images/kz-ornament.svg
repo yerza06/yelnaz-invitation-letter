@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 110" fill="none">
+  <!-- Base horizontal guideline -->
+  <line x1="10" y1="55" x2="90"  y2="55" stroke="#C9A84C" stroke-width=".6" opacity=".35"/>
+  <line x1="150" y1="55" x2="230" y2="55" stroke="#C9A84C" stroke-width=".6" opacity=".35"/>
+
+  <!-- LEFT: қошқар мүйіз -->
+  <path d="M50 55 C 50 38, 38 28, 28 38 C 22 44, 24 54, 32 54 C 36 54, 38 51, 36 48"
+        stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M50 55 C 50 72, 38 82, 28 72 C 22 66, 24 56, 32 56 C 36 56, 38 59, 36 62"
+        stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M50 55 C 62 50, 72 40, 68 28 C 64 20, 55 22, 56 30"
+        stroke="#C9A84C" stroke-width="1.3" fill="none" stroke-linecap="round" opacity=".75"/>
+  <path d="M50 55 C 62 60, 72 70, 68 82 C 64 90, 55 88, 56 80"
+        stroke="#C9A84C" stroke-width="1.3" fill="none" stroke-linecap="round" opacity=".75"/>
+  <circle cx="28" cy="55" r="2" fill="#8B1A2E" opacity=".55"/>
+
+  <!-- CENTER: тұмар -->
+  <path d="M120 15 L160 55 L120 95 L80 55 Z" stroke="#C9A84C" stroke-width="1" opacity=".5" fill="none"/>
+  <path d="M120 26 L149 55 L120 84 L91 55 Z" stroke="#C9A84C" stroke-width=".8" opacity=".4" fill="none"/>
+  <path d="M120 38 L137 55 L120 72 L103 55 Z" fill="#C9A84C" opacity=".15"/>
+
+  <!-- Sun motif -->
+  <circle cx="120" cy="55" r="9" stroke="#C9A84C" stroke-width=".8" opacity=".7" fill="none"/>
+  <circle cx="120" cy="55" r="5" fill="#C9A84C" opacity=".45"/>
+  <circle cx="120" cy="55" r="2" fill="#8B1A2E"/>
+  <line x1="120" y1="44" x2="120" y2="40" stroke="#C9A84C" stroke-width="1" opacity=".55"/>
+  <line x1="120" y1="66" x2="120" y2="70" stroke="#C9A84C" stroke-width="1" opacity=".55"/>
+  <line x1="109" y1="55" x2="105" y2="55" stroke="#C9A84C" stroke-width="1" opacity=".55"/>
+  <line x1="131" y1="55" x2="135" y2="55" stroke="#C9A84C" stroke-width="1" opacity=".55"/>
+  <line x1="112" y1="47" x2="114" y2="49" stroke="#C9A84C" stroke-width=".8" opacity=".45"/>
+  <line x1="126" y1="61" x2="128" y2="63" stroke="#C9A84C" stroke-width=".8" opacity=".45"/>
+  <line x1="112" y1="63" x2="114" y2="61" stroke="#C9A84C" stroke-width=".8" opacity=".45"/>
+  <line x1="126" y1="49" x2="128" y2="47" stroke="#C9A84C" stroke-width=".8" opacity=".45"/>
+
+  <!-- Diamond corner markers -->
+  <path d="M120 12 L123 15 L120 18 L117 15 Z" fill="#C9A84C" opacity=".55"/>
+  <path d="M120 92 L123 95 L120 98 L117 95 Z" fill="#C9A84C" opacity=".55"/>
+  <path d="M77 55 L80 52 L83 55 L80 58 Z" fill="#C9A84C" opacity=".55"/>
+  <path d="M157 55 L160 52 L163 55 L160 58 Z" fill="#C9A84C" opacity=".55"/>
+
+  <!-- RIGHT: қошқар мүйіз (mirror) -->
+  <path d="M190 55 C 190 38, 202 28, 212 38 C 218 44, 216 54, 208 54 C 204 54, 202 51, 204 48"
+        stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M190 55 C 190 72, 202 82, 212 72 C 218 66, 216 56, 208 56 C 204 56, 202 59, 204 62"
+        stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M190 55 C 178 50, 168 40, 172 28 C 176 20, 185 22, 184 30"
+        stroke="#C9A84C" stroke-width="1.3" fill="none" stroke-linecap="round" opacity=".75"/>
+  <path d="M190 55 C 178 60, 168 70, 172 82 C 176 90, 185 88, 184 80"
+        stroke="#C9A84C" stroke-width="1.3" fill="none" stroke-linecap="round" opacity=".75"/>
+  <circle cx="212" cy="55" r="2" fill="#8B1A2E" opacity=".55"/>
+</svg>
