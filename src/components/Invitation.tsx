@@ -36,7 +36,12 @@ export default function Invitation() {
                     </svg>
                 </div>
 
-                <p className="inv-signature reveal">— Абылай және Айнұр —</p>
+                <span className="section-eyebrow reveal" style={{ display: 'block', marginTop: '44px', marginBottom: '8px' }}>
+                    Той иелері
+                </span>
+                <p className="inv-signature reveal" style={{ marginTop: 0, fontSize: 'clamp(22px, 5vw, 30px)' }}>
+                    — Абылай және Айнұр —
+                </p>
             </div>
         </section>
     );
