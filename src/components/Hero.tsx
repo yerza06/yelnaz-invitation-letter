@@ -50,7 +50,7 @@ const Hero = forwardRef<HTMLElement, {}>((_, ref) => {
             <img className="saukele-figure-left" src="/images/saukele-left.svg" alt="" aria-hidden="true" />
 
             <div className="hero-content">
-                <h1 className="hero-name">Yelnaz</h1>
+                <h1 className="hero-name">Елназ</h1>
                 <h2 className="hero-ceremony">Қыз ұзату</h2>
                 <div className="hero-divider" style={{ display: 'flex', justifyContent: 'center' }}>
                     <img src="/images/photo_2026-04-17_03-12-42.svg" alt="" aria-hidden="true" style={{ height: '120px', width: 'auto' }} />
