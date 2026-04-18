@@ -4,26 +4,15 @@ export default function Invitation() {
         <section id="invitation">
             <div className="invitation-inner">
                 <span className="section-eyebrow reveal">Шақыру хат</span>
-                <h2
-                    className="section-title reveal"
-                    style={{ textAlign: 'center', fontSize: 'clamp(22px, 4.5vw, 40px)', lineHeight: 1.45 }}
-                >
-                    Құрметті ағайын-туыс, бауырлар,<br /><em>құда-жекжат, нағашы-жиен, бөлелер,</em><br />әріптестер және қадірлі дос-жарандар!
-
-                </h2>
 
                 <p className="inv-text reveal">
-                    Сәздерді берекелі шаңырақ бойжеткен аяулы
-                    <strong> Елназ</strong> қызымызды ата-анасының аялы алақанынан құтты босағасына шығарып салу рәсіміне арналған салтанатты дастарханның қадірлі қонағы болуға шақырамыз!
+                    Құрметті ағайын-туыс, бауырлар,<br /><em>құда-жекжат, нағашы-жиен, бөлелер,</em><br />әріптестер және қадірлі дос-жарандар!
+                    <br /><br />
+                    Сіздерді берекелі шаңырақта <br />бойжеткен аяулы<br />
+                    <strong><em>Елназ</em></strong> <br />қызымызды ата-анасының аялы алақанынан құтты босағасына шығарып салу рәсіміне арналған салтанатты дастарқанның қадірлі қонағы болуға шақырамыз!
                 </p>
 
-
-                <p className="inv-note reveal">
-                    Сіздің болуыңыз бізге зор қуаныш<br />
-                    және бата-береке әкеледі.
-                </p>
-
-                <div className="ornament-line reveal" style={{ marginTop: '44px' }}>
+                <div className="ornament-line reveal">
                     <svg width="22" height="22" viewBox="0 0 22 22">
                         <path d="M11 1 L21 11 L11 21 L1 11 Z" fill="#C9A84C" opacity=".3" />
                         <path d="M11 5 L17 11 L11 17 L5 11 Z" fill="#C9A84C" opacity=".55" />
@@ -31,13 +20,13 @@ export default function Invitation() {
                     </svg>
                 </div>
 
-                <span className="section-eyebrow reveal" style={{ display: 'block', marginTop: '44px', marginBottom: '8px' }}>
+                <span className="section-eyebrow reveal">
                     Той иелері
                 </span>
-                <p className="inv-signature reveal" style={{ marginTop: 0, fontSize: 'clamp(22px, 5vw, 30px)' }}>
+                <p className="inv-signature reveal">
                     — Абылай және Айнұр —
                 </p>
             </div>
-        </section>
+        </section >
     );
 }
