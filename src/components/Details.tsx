@@ -5,20 +5,20 @@ export default function Details() {
         <section id="details">
             <div className="details-inner">
                 <h2 className="program-title reveal">Тойдың бағдарламасы:</h2>
-                
+
                 <div className="program-grid">
                     <div className="program-line"></div>
-                    
+
                     {/* Item 1 */}
                     <div className="program-grid-item left-content reveal-left">
                         <div className="program-img-wrapper">
-                            <img src="/images/photo_2026-04-18_02-27-27_.jpg" alt="17:00" />
+                            <img src="/images/photo_2026-04-18_19-26-05 (Изменен 1).jpg" alt="17:00" />
                         </div>
                     </div>
                     <div className="program-grid-item right-content reveal-right">
                         <div className="program-info">
                             <time>17:00</time>
-                            <p>ҚОНАҚТАРДЫҢ<br/>ЖИНАЛУЫ</p>
+                            <p>ҚОНАҚТАРДЫҢ<br />ЖИНАЛУЫ</p>
                         </div>
                     </div>
 
@@ -26,12 +26,12 @@ export default function Details() {
                     <div className="program-grid-item left-content text-right reveal-left">
                         <div className="program-info">
                             <time>18:00</time>
-                            <p>ТОЙДЫҢ<br/>БАСТАЛУЫ</p>
+                            <p>ТОЙДЫҢ<br />БАСТАЛУЫ</p>
                         </div>
                     </div>
                     <div className="program-grid-item right-content reveal-right">
                         <div className="program-img-wrapper">
-                            <img src="/images/photo_2026-04-18_02-27-37_.jpg" alt="18:00" />
+                            <img src="/images/photo_2026-04-18_19-25-56 (Изменен 1).jpg" alt="18:00" />
                         </div>
                     </div>
 
@@ -44,7 +44,7 @@ export default function Details() {
                     <div className="program-grid-item right-content reveal-right">
                         <div className="program-info">
                             <time>23:00</time>
-                            <p>ШЫҒАРЫП<br/>САЛУ</p>
+                            <p>ШЫҒАРЫП<br />САЛУ</p>
                         </div>
                     </div>
 
