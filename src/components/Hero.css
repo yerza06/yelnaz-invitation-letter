@@ -18,7 +18,7 @@
     ),
     linear-gradient(rgba(255, 248, 240, 0.84), rgba(255, 248, 240, 0.88)),
     /*url("images/hero-bg.png") center / cover no-repeat,*/
-    url("images/photo_2026-04-17_02-20-14.jpg") center / cover no-repeat,
+    url("/images/photo_2026-04-17_02-20-14.jpg") center / cover no-repeat,
     var(--cream);
   background-attachment: scroll, scroll, scroll, scroll, fixed, scroll;
   display: flex;
