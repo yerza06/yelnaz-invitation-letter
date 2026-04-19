@@ -1,21 +1,15 @@
 #hero {
   min-height: 100vh;
   background:
-    radial-gradient(
-      ellipse 60% 80% at 20% 50%,
+    radial-gradient(ellipse 60% 80% at 20% 50%,
       rgba(139, 26, 46, 0.09) 0%,
-      transparent 70%
-    ),
-    radial-gradient(
-      ellipse 50% 60% at 80% 20%,
+      transparent 70%),
+    radial-gradient(ellipse 50% 60% at 80% 20%,
       rgba(201, 168, 76, 0.08) 0%,
-      transparent 60%
-    ),
-    radial-gradient(
-      ellipse 40% 50% at 55% 85%,
+      transparent 60%),
+    radial-gradient(ellipse 40% 50% at 55% 85%,
       rgba(139, 26, 46, 0.06) 0%,
-      transparent 50%
-    ),
+      transparent 50%),
     linear-gradient(rgba(255, 248, 240, 0.84), rgba(255, 248, 240, 0.88)),
     /*url("images/hero-bg.png") center / cover no-repeat,*/
     url("/images/photo_2026-04-17_02-20-14.jpg") center / cover no-repeat,
@@ -80,6 +74,7 @@
 }
 
 @keyframes ring-pulse {
+
   0%,
   100% {
     transform: translate(-50%, -50%) scale(1);
@@ -142,6 +137,7 @@
 }
 
 @keyframes figure-breathe {
+
   0%,
   100% {
     transform: translateY(0);
@@ -196,14 +192,12 @@
   font-weight: 400;
   /* line-height: 1; */
   letter-spacing: 0;
-  background: linear-gradient(
-    130deg,
-    var(--burgundy-dark) 0%,
-    var(--burgundy) 30%,
-    #b82a42 55%,
-    var(--burgundy) 70%,
-    var(--burgundy-dark) 100%
-  );
+  background: linear-gradient(130deg,
+      var(--burgundy-dark) 0%,
+      var(--burgundy) 30%,
+      #b82a42 55%,
+      var(--burgundy) 70%,
+      var(--burgundy-dark) 100%);
   background-size: 220% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -232,7 +226,7 @@
   font-family: "Cormorant Garamond", serif;
   /* font-size: clamp(20px,4.5vw,32px); */
   font-size: clamp(40px, 7.5vw, 74px);
-  font-weight: 400;
+  font-weight: 500;
   font-style: italic;
   /*color: var(--gold);*/
   color: #a18330;
@@ -254,11 +248,9 @@
   gap: 14px;
   padding: 13px 32px;
   border: 1px solid var(--gold);
-  background: linear-gradient(
-    135deg,
-    rgba(201, 168, 76, 0.06),
-    rgba(212, 175, 55, 0.04)
-  );
+  background: linear-gradient(135deg,
+      rgba(201, 168, 76, 0.06),
+      rgba(212, 175, 55, 0.04));
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: clamp(11px, 2.2vw, 13px);
   font-weight: 500;
@@ -305,6 +297,7 @@
 }
 
 @keyframes scroll-drip {
+
   0%,
   100% {
     transform: scaleY(1);

@@ -24,7 +24,7 @@ export default function Invitation() {
                     Той иелері
                 </span>
                 <p className="inv-signature reveal">
-                    — Абылай және Айнұр —
+                    — Абылай & Айнұр —
                 </p>
             </div>
         </section >
