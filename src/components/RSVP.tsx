@@ -36,12 +36,12 @@ export default function RSVP() {
         let msg = '';
         if (attending === 'yes') {
             const withSpouse = spouse === 'with';
-            msg = `Сәлем! Мен ${nameVal}.\n\nYelnaz'дың Қыз ұзату тойына (1 шілде 2026) қатысамын.`;
+            msg = `Сәлем! Мен ${nameVal}.\n\nЕлназдың Қыз ұзату тойына (1 шілде 2026) қатысамын.`;
             msg += withSpouse
                 ? '\nЖұбайыммен бірге келемін. (2 адам)'
                 : '\nЖалғыз келемін. (1 адам)';
         } else {
-            msg = `Сәлем! Мен ${nameVal}.\n\nӨкінішке орай, Yelnaz'дың Қыз ұзату тойына (1 шілде 2026) келе алмаймын.`;
+            msg = `Сәлем! Мен ${nameVal}.\n\nӨкінішке орай, Елназдың Қыз ұзату тойына (1 шілде 2026) келе алмаймын.`;
         }
 
         const url = `https://wa.me/77071900557?text=${encodeURIComponent(msg)}`;

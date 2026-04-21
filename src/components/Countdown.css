@@ -89,7 +89,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(15px, 3vw, 20px);
+  font-size: clamp(18px, 3vw, 25px);
   font-weight: 400;
   color: var(--text);
   border: 1px solid transparent;
@@ -115,11 +115,9 @@
 .cal-day.active {
   flex-direction: column;
   gap: 2px;
-  background: linear-gradient(
-    135deg,
-    var(--burgundy) 0%,
-    var(--burgundy-dark) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--burgundy) 0%,
+      var(--burgundy-dark) 100%);
   color: var(--cream);
   border-color: var(--gold);
   box-shadow:
@@ -157,6 +155,7 @@
 }
 
 @keyframes cal-pulse {
+
   0%,
   100% {
     box-shadow:
@@ -173,7 +172,7 @@
 
 .cal-caption {
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(14px, 3vw, 17px);
+  font-size: clamp(28px, 3vw, 34px);
   font-style: italic;
   color: var(--burgundy);
   opacity: 0.75;
@@ -221,7 +220,7 @@
 }
 
 .cd-label {
-  font-size: clamp(9px, 1.8vw, 11px);
+  font-size: clamp(11px, 1.8vw, 13px);
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--burgundy);

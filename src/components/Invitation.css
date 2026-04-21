@@ -24,7 +24,7 @@
 }
 
 .inv-text strong {
-  font-family: "Great Vibes", cursive;
+  font-family: "Great Vibes", "Z003", cursive;
   font-size: clamp(44px, 5vw, 30px);
   font-style: normal;
   font-weight: 700;

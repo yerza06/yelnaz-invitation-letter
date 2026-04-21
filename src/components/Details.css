@@ -24,7 +24,7 @@
 }
 
 .program-title {
-  font-family: "Great Vibes", cursive;
+  font-family: "Great Vibes", "Z003", cursive;
   font-size: clamp(38px, 10vw, 54px);
   font-weight: 400;
   color: var(--gold);

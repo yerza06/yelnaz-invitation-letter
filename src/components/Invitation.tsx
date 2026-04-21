@@ -3,7 +3,7 @@ export default function Invitation() {
     return (
         <section id="invitation">
             <div className="invitation-inner">
-                <span className="section-eyebrow reveal">Шақыру хат</span>
+                <span className="section-eyebrow reveal">Шақыру</span>
 
                 <p className="inv-text reveal">
                     Құрметті ағайын-туыс, бауырлар,<br /><em>құда-жекжат, нағашы-жиен, бөлелер,</em><br />әріптестер және қадірлі дос-жарандар!
