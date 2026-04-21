@@ -30,8 +30,8 @@ export default function Countdown() {
         <section id="countdown">
             <div className="countdown-inner">
                 <img className="kz-ornament reveal" src="/images/kz-ornament-heart.svg" alt="" aria-hidden="true" />
-                <span className="section-eyebrow reveal">Тойдың уақыты</span>
-                <h2 className="section-title reveal">Шілде<br /><em>2026</em></h2>
+                <span className="section-eyebrow reveal">Той салтанаты</span>
+                <h2 className="section-title reveal">1 Шілде<br /><em>2026 жыл</em></h2>
                 <div className="cal reveal">
                     <div className="cal-head">
                         <div className="cal-dow">Дс</div>
@@ -80,8 +80,8 @@ export default function Countdown() {
                         <div className="cal-day">31</div>
                     </div>
                 </div>
-                <p className="cal-caption reveal">Сағат 18:00-ден басталады</p>
-                <span className="section-eyebrow reveal" style={{ marginTop: '20px' }}>Мерекеге дейін</span>
+                <p className="cal-caption reveal">Сағат 18:00-де</p>
+                <span className="section-eyebrow reveal" style={{ marginTop: '30px' }}>Мерекеге дейін</span>
                 <div className="cd-grid reveal">
                     <div className="cd-item">
                         <div className="cd-num" id="cd-days">{timeLeft.days}</div>
