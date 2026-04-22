@@ -8,6 +8,9 @@ export default function MusicPlayer() {
         if (!audioRef.current) return;
         if (audioRef.current.paused) {
             audioRef.current.volume = 0.45;
+            if (audioRef.current.currentTime === 0) {
+                audioRef.current.currentTime = 27;
+            }
             audioRef.current
                 .play()
                 .then(() => setIsPlaying(true))
