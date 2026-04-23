@@ -80,7 +80,7 @@ export default function Countdown() {
                         <div className="cal-day">31</div>
                     </div>
                 </div>
-                <p className="cal-caption reveal">Сағат 18:00-де</p>
+                <p className="cal-caption reveal">Сағат 18:00</p>
                 <span className="section-eyebrow reveal" style={{ marginTop: '30px' }}>Мерекеге дейін</span>
                 <div className="cd-grid reveal">
                     <div className="cd-item">
